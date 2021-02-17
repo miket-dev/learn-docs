@@ -182,9 +182,12 @@ class Counter extends React.Component {
         };
     }
     
+    getSnapshotBeforeUpdate(prevProps, prevState) {
+         console.log(`The value was ${prevState.clickCounter}`);
+    }
+    
     componentDidUpdate(prevProps, prevState, snapshot) {
         if (this.state.clickCounter != prevState.clickCounter) {
-            console.log(`The value was ${prevState.clickCounter}`);
             console.log('Click counter has been updated!');
         }
     }
