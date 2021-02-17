@@ -40,11 +40,15 @@ class Counter extends React.Component {
 #### Functional Component
 ```
 const Counter = () => {
-    const [clickCounter, setClickCounter] = useState(0);
+    const [state, setState] = useState({ 
+      clickCounter: 0
+    });
 
     const onClickHandler = () => {
-        const clickCount = clickCounter + 1;
-        setClickCounter(clickCount);
+        const clickCount = state.clickCounter + 1;
+        setState({
+            clickCounter: clickCount
+        });
     }
     
     return <button onClick={() => onClickHandler()}>
