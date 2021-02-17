@@ -1,4 +1,16 @@
 # react-hooks
+##### Table of Contents
+* React hooks
+    * [useState](#usestate)
+    * [useEffect](#useeffect)
+        * [Empty array of dependencies](#empty-array-of-dependencies)
+        * [Non empty array of dependencies](#non-empty-array-of-dependencies)
+        * [Returning value of useEffect](#returning-value-of-useeffect)
+    * [useCallback](#usecallback)
+    * [useRef](#useref)
+* [Redux hooks](#redux-hooks)
+    * [useSelector](#useselector)
+    * [useDispatch](#usedispatch)
 ## useState
 Initializes the state of the react component
 #### Class component
