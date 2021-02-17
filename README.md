@@ -137,7 +137,7 @@ const Counter = () => {
 }
 ```
 ### Returning value of useEffect
-It is being called when the dependencies will not be updated anymore
+It is a clean-up function which is being called before the dependency will change its value, or component unmounts from the screen.
 #### Class (empty array of dependencies)
 ```
 class MyComponent extends React.Component {
