@@ -1,4 +1,4 @@
-# react-hooks
+# React / Hooks
 ##### Table of Contents
 * React hooks
     * [useState](#usestate)
