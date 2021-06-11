@@ -88,6 +88,7 @@ It is not needed to unsubscribe from `Observable` in the following cases:
    }
 ```
 2. Using built-in state manager `dispatch` methods
+
 2.1. NGRX
 ```
   constructor(private store: Store<{ count: number }>) {
@@ -98,6 +99,7 @@ It is not needed to unsubscribe from `Observable` in the following cases:
     this.store.dispatch(increment());
   }
 ```
+
 2.2. NGXS
 ```
   constructor(private store: Store) {
